@@ -8,7 +8,8 @@ const Persona = sequelize.define("Persona",  {
     },
     DNI: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        unique: true
     },
     fechaNacimiento: {
         type: DataTypes.DATE, 
