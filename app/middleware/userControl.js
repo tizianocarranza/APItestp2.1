@@ -35,6 +35,11 @@ const verifyNewUser = async (req, res, next) => {
     {
         const { userName, email, password} = req.body;
 
+        if(!userName || !email || !password)
+        {
+            res.status(400).json({message: "Debe ingresar userName, email y password"});
+        }
+
         let user = await User.findOne({ where: { userName } });
         if(user)
         {
