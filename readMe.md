@@ -33,10 +33,12 @@ ESTRUCTURA
             models -->
                 persona.js define el modelo de persona para db sql
 
-    *.env/.env.example: variables de entorno --- PARA USAR LA APP, CAMBIAR ESTAS VARIABLES.
+    *.env/.env.example: variables de entorno --- PARA USAR LA APP, -->> CAMBIAR ESTAS VARIABLES SEGUN CORRESPONDA <<--.
 
-                                                NOTA: Si la DB a usar no es "mysql", cambiar el dialect: "motorDBSql" en sql.js al motor de DB elegido. Aclaro por que este valor debe ser definido explicitamente, por lo tanto no puede ser definido en las variables de entorno
+                                                
+    NOTA: Si la DB a usar no es "mysql", cambiar el dialect: "motorDBSql" en sql.js al motor de DB elegido. Aclaro por que este valor debe ser definido explicitamente, por lo tanto no puede ser definido en las variables de entorno
 
+    NOTA: Si es la primera vez que usa la app establezca el valor de "force" a "true" en el archivo sqlSync.js para crear las tablas si no existen. Luego cambie este valor a "false" para no borrar los datos cada vez que inicie la app.
 
 -------
 
